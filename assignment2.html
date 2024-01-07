@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crabsite-login</title>
+    <link rel="shortcut icon" href="crab.ico" type="image/x-icon">
+    <style>
+        hr {
+            color: rgba(255, 255, 255, 0.774);
+            width: 504px;
+        }
+
+        body {
+            background-color: rgba(1, 14, 56, 0.89);
+        }
+
+        .kite {
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        blockquote {
+            color: white;
+            text-align: center;
+        }
+
+        input {
+            background-color: rgba(2, 9, 30, 0.84);
+            border-color: rgba(2, 9, 30, 0.84);
+            text-align: center;
+        }
+
+        #radios {
+            accent-color: silver;
+            margin-right: 370px;
+            text-align: center;
+        }
+
+        #checks {
+            accent-color: silver;
+            margin-right: 262px;
+            text-align: center;
+        }
+
+        #nameida,
+        #nameidb,
+        #emailida,
+        #passwordida,
+        #ageida,
+        #textarea {
+            width: 500px;
+            color: rgba(247, 247, 249, 0.84);
+        }
+
+        .nameleft {
+            margin-right: 350px;
+            text-align: center;
+        }
+
+        .passwordheadingleft {
+            margin-right: 336px;
+        }
+
+        .emailleft {
+            margin-right: 390px;
+            text-align: center;
+        }
+
+        #pph {
+            margin-right: 347px;
+            text-align: center;
+        }
+
+        #file {
+            margin-right: 260px;
+            text-align: center;
+        }
+
+        .select {
+            margin-right: 14px;
+            text-align: center;
+        }
+
+        .optheading {
+            color: white;
+            margin-right: 315px;
+            text-align: center;
+        }
+
+        .bioheading {
+            margin-right: 415px;
+            color: white;
+            text-align: center;
+        }
+
+        #bio {
+            background-color: rgba(2, 9, 30, 0.84);
+            width: 500px;
+            border-color: rgba(2, 9, 30, 0.84);
+            color: white;
+            margin-left: 365px;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 250px;
+            color: white;
+            background-color: rgba(128, 128, 128, 0.32);
+            border-radius: 0px;
+            border-color: silver;
+            text-align: center;
+            margin-left: 500px;
+        }
+
+        small {
+            color: white;
+        }
+    </style>
+</head>
+<header><small><i>Assignment 2 (HTML & CSS)</i></small></header>
+
+<body>
+    <h1>Registration Form</h1>
+    <blockquote><b>Please fill out this form with the required information</b></blockquote><br><br>
+    <form action="form.php">
+
+
+        <div class="kite">
+            <label for="nameida">
+                <div class="nameleft">Enter your First Name
+
+                </div><br>
+                <div class="ten">
+                    <input type="text" name="firstname" id="nameida">
+                </div><br>
+            </label>
+            <label for="nameidb">
+                <div class="nameleft">Enter your Last Name<br>
+                </div><br>
+                <div class="eleven">
+                    <input type="text" name="lastname" id="nameidb">
+                </div><br>
+            </label>
+            <!-- email id 🙄 -->
+            <label for="emailida">
+                <div class="emailleft">Enter your email
+                </div><br>
+                <input type="email" name="email" id="emailida">
+                <br>
+            </label><br>
+            <label for="passwordida">
+                <div class="passwordheadingleft">Create a New Password
+                </div><br>
+                <input type="password" name="password" id="passwordida" maxlength="14" minlength="8">
+            </label><br><br>
+            <!-- Horizontal Line 🙄😯 -->
+            <hr><br>
+
+            <div id="radios">
+                <label for="radida">
+                    <input type="radio" value="rad a" name="radio" id="radida">Personal
+                    Account<br>
+                </label><br>
+                <label for="radidb">
+                    <input type="radio" value="rad b" name="radio" id="radidb">Business Account<br><br>
+                </label>
+            </div>
+            <!-- Checkboxes 😛  -->
+            <div id="checks">
+                <label for="checkida">
+                    <input type="checkbox" name="checkbox" id="checkida">I accept the <u>terms and
+                        conditions</u></label>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <label for="profile">
+                <div id="pph">Upload a profile picture<br><br></div>
+                <div id="file"><input type="file" name="profile" id="profile"></div>
+            </label><br><br>
+
+            <!-- Age 💥 -->
+            <label for="ageida">
+                <div class="ageheadingleft">Input your age (years)</div><br>
+                <input type="number" name="age" id="ageida">
+            </label>
+            <br><br>
+        </div>
+
+        <div class="optheading">How did you hear about us?</div><br>
+        <div class="select"><select name="selections" id="select">
+                <option value="one">(select one)</option>
+                <option value="two">A friendly recommendation</option>
+                <option value="three">searched over the internet and got to know that we are facilitating our visitors
+                    ....
+                </option>
+                <option value="four">parental advise</option>
+            </select>
+        </div><br>
+        <!-- Bio 🎈 -->
+        <label for="bio">
+            <div class="bioheading">Provide a bio:
+            </div><br>
+            <textarea name="bio" id="bio" cols="1" rows="2" placeholder="I like coding on the beach..."></textarea>
+        </label>
+        </div><br><br><br>
+        <button><big><b>Submit</b></big></button>
+    </form>
+</body>
+
+</html>
